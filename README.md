@@ -27,3 +27,23 @@ some useful python script for ida
 ![image](https://github.com/lichao890427/idascript/blob/master/screenshots/read_unicode.png)
 		Notice: 
 		  Due to the disadvantable of python2 itself, there still many characters could not be shown
+
+##3.add_info_for_androidgdb.py
+		Description:
+		  When you debug android with IDA and gdbserver, you'd find that the module list and segment is
+		empy, while we can read info from /proc/[pid]/, it's what my script just do ^_^
+
+##4.trace_instruction.py
+		Description:
+		  this script is to trace instruction stream in one run
+
+##5.detect_ollvm.py
+		Description:
+		  this script is to detect ollvm and fix it in some extent, apply to android and ios, enjoy ^_^
+		  function "try_trace_fix_ollvm" used to fix ollvm
+		  function "check_ollvm" used to find ollvm in android so file
+		  function "find_ios_ollvm_branches" used to find ollvm in macho file
+
+##6.add_block_for_macho.py
+		Description:
+		  this script is used to analysis block structure exist in macho file
