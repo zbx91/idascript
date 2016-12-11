@@ -1,6 +1,8 @@
 # idascript
 some useful python script for ida 
 
+TOC
+
 ##1.add_xref_for_macho.py
 		Description:
 		  When you deal with macho file with ida, you'll find out that it's not easy to find Objc-Class 
