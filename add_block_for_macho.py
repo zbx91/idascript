@@ -1,33 +1,5 @@
 # this file is for extracting block structure for mach-o file
-'''
-    #tranverse structures
-    idx  = GetFirstStrucIdx()
-    while idx != idaapi.BADADDR:
-        sid = GetStrucId(idx)
-        print "%d\t%x\t%s\t" % (idx, sid, GetStrucName(sid))  
-        m = GetFirstMember(sid)
-        while (m != -1 and m != idaapi.BADADDR):
-            name = GetMemberName(sid, m)
-            if name:
-                print "\t+%x\t%x\t%s" % (m, GetMemberSize(sid, m), name)
-            m = GetStrucNextOff(sid, m)    
-        idx = GetNextStrucIdx(idx)
 
-
-    #traverse local types
-    ml=GetMaxLocalType()
-    for i in range(1, ml):
-        print i, GetLocalType(i, 6)
-
-
-    #disassemble a function
-    addr=0x40540A
-    begin=GetFunctionAttr(addr,FUNCATTR_START)
-    end=GetFunctionAttr(addr,FUNCATTR_END)
-    while begin < end:
-        print GetDisasm(begin)
-        begin = begin + decode_insn(begin)
-'''
 import idc
 import idaapi
 import re

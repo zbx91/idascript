@@ -1,5 +1,5 @@
-# idascript
-some useful python script for ida 
+# idascript    by lichao890427
+These scripts are all wrote be me, when encountered with difficult tasks, also ease things for you.
 
 TOC
 
@@ -48,4 +48,10 @@ TOC
 
 ##6.add_block_for_macho.py
 		Description:
-		  this script is used to analysis block structure exist in macho file
+		  this script is used to analysis block structure exist in macho file, target NSConcreteStackBlock/
+		  NSConcreteGlobalBlock currently, also contain some wonderful skills
+![image](https://github.com/lichao890427/idascript/blob/master/screenshots/add_block_for_macho.png)
+		  
+##7.ida_utils.py
+		Description:
+		  some useful function wrotten before
