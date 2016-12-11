@@ -1,7 +1,7 @@
 # idascript
 some useful python script for ida 
 
-
+TOC
 
 ##1.add_xref_for_macho.py
 		Description:
