@@ -90,7 +90,7 @@ def addobjcref():
     addr = PrevFunction(-1)
     while addr != 0xffffffff:
         curname = GetFunctionName(addr)
-        if -1 != curname.find('['):
+        if None != re.match(ur'^(\+|\-)\[.* .*\]$', curname):
             curname = curname.replace("[", "").replace("]", "")
             curname = curname.split(" ")[1]
             # may be more than one function with same sel but differenct class
